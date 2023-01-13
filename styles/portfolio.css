@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    /* margin: 0; */
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -237,15 +237,20 @@ textarea {
 /* responsive styles  */
 
 @media screen and (max-width:576px) {
-    .skills-container {
+
+    .skills-container,
+    .resume-contant {
         flex-direction: column;
+        padding: 10px 20px;
     }
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
-    .skills-container {
+
+    .skills-container,
+    .resume-contant {
         flex-wrap: wrap;
-        background-color: #FD6E0A;
+        padding: 10px 20px;
     }
 }
 
