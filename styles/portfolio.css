@@ -239,9 +239,15 @@ textarea {
 @media screen and (max-width:576px) {
 
     .skills-container,
-    .resume-contant {
+    .resume-contant,
+    .about-info-container {
         flex-direction: column;
         padding: 10px 20px;
+    }
+
+    .about {
+        padding: 0px;
+        margin: 0;
     }
 }
 
@@ -252,6 +258,8 @@ textarea {
         flex-wrap: wrap;
         padding: 10px 20px;
     }
+
+
 }
 
 .hide {
