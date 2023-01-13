@@ -41,7 +41,7 @@ nav li {
 .btn-primary {
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     border: 0;
     padding: 18px 35px;
     height: 64px;
@@ -56,6 +56,8 @@ nav li {
     align-items: center;
     justify-content: space-between;
 }
+
+
 
 .banner-sub-title {
     font-weight: 600;
@@ -77,6 +79,7 @@ nav li {
     color: #757575;
     margin-bottom: 30px;
 }
+
 
 /* main section */
 main {
@@ -215,7 +218,7 @@ main {
 
 .contact-container {
     display: flex;
-    gap: 100px;
+    gap: 50px;
     max-width: 1140px;
     width: 100%;
     margin: auto;
@@ -238,17 +241,27 @@ textarea {
 
 /* responsive styles  */
 
-@media screen and (max-width:576px) {
 
+@media screen and (max-width:576px) {
+    .header {
+        background-image: none;
+    }
+
+    nav,
+    nav ul,
     .skills-container,
     .resume-contant,
     .about-info-container,
-    .contact-container {
+    .contact-container,
+    .banner {
         flex-direction: column;
         /* padding: 10px 20px; */
     }
 
-    .about {
+    .banner,
+    .about,
+    nav,
+    nav li {
         padding: 0px;
         margin: 0;
     }
@@ -258,6 +271,11 @@ textarea {
     textarea {
         padding: 18px 0px;
     }
+
+    .banner img {
+        width: 100%;
+    }
+
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
@@ -269,8 +287,4 @@ textarea {
     }
 
 
-}
-
-.hide {
-    display: none;
 }
