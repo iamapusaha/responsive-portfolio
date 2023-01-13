@@ -207,31 +207,33 @@ main {
 
 /* contact section  */
 .contact {
+
+    background: #FFF8F3;
+
+
+}
+
+.contact-container {
     display: flex;
     gap: 100px;
-    background: #FFF8F3;
-    padding: 130px 230px;
-}
-
-.contact .section-title {
-    text-align: left;
-}
-
-.contact,
-input,
-textarea {
+    max-width: 1140px;
     width: 100%;
+    margin: auto;
+}
+
+
+.section-title {
+    text-align: left;
+
+}
+
+.contact input[type="text"],
+input[type="email"],
+textarea {
     margin-bottom: 24px;
-}
-
-
-.contact-form {
-    width: 461px;
-}
-
-#btn-sumbit {
-    width: 150px;
-
+    border: 0;
+    width: 100%;
+    padding: 18px 30px;
 }
 
 /* responsive styles  */
@@ -240,14 +242,21 @@ textarea {
 
     .skills-container,
     .resume-contant,
-    .about-info-container {
+    .about-info-container,
+    .contact-container {
         flex-direction: column;
-        padding: 10px 20px;
+        /* padding: 10px 20px; */
     }
 
     .about {
         padding: 0px;
         margin: 0;
+    }
+
+    .contact-form input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 18px 0px;
     }
 }
 
